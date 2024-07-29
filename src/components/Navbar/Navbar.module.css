@@ -1,0 +1,100 @@
+@import "../../vars.css";
+
+.navbar {
+    /*相对位置*/
+    position: relative;
+    /*弹性布局*/
+    display: flex;
+    /*元素居中*/
+    align-items: center;
+    /*元素两端对齐*/
+    justify-content: space-between;
+    padding-top: 61px;
+    /*多个元素重叠时,z-index越大则在上面*/
+    z-index: 2;
+    /*横向外边距10%(因为已经两端对齐了,所以会内收)*/
+    margin: 0 10%
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    /*删除一切例如下划线*/
+    text-decoration: none;
+    color: var(--color-text)
+}
+
+.menu {
+    display: flex;
+}
+
+.menuBtn {
+    display: none;
+}
+
+.menuItems {
+    display: flex;
+    /*元素间隔*/
+    gap: 47px;
+    /*不要bullet point*/
+    list-style: none;
+}
+
+/*对menuItems中的<a>生效*/
+.menuItems a {
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--color-text)
+}
+
+@media screen and (max-width: 830px) {
+    /*嵌套写其他的css*/
+    .navbar {
+        /*按列展示*/
+        flex-direction: column;
+        /*在交叉轴(非主轴)方向顶部对齐*/
+        align-items: flex-start;
+    }
+
+    .menu {
+        /*脱离文档流,不影响其他元素*/
+        position: absolute;
+        /*右侧向左移动*/
+        right: 0;
+        margin-right: 10%;
+        /*按列展示*/
+        flex-direction: column;
+        /*在交叉轴(非主轴)方向底部对齐*/
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+    }
+
+    .menuBtn {
+        /*块级元素显示,占据整行*/
+        display: block;
+        /*指针放上时变为pointer(手指)*/
+        cursor: pointer;
+    }
+
+    .menuItems {
+        /*元素不可见*/
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        border-radius: 10px;
+        background: rgb(25, 55, 109);
+        /*渐变色*/
+        background: linear-gradient(0deg, rgba(25, 55, 109, 0.2) 0%, rgba(25, 55, 109, 1) 100%);
+        padding: 24px 33px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .menuOpen {
+        display: flex;
+        z-index: 1;
+    }
+}
+
+
