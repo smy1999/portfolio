@@ -1,0 +1,29 @@
+@import "../../vars.css";
+
+.container {
+    padding-top: 76px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: var(--color-text);
+}
+
+.title {
+    color: var(--color-text);
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+
+}
+
+.projects {
+    padding-top: 37px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    /*弹性模型按主轴居中对齐*/
+    justify-content: center;
+    width: 100%
+}

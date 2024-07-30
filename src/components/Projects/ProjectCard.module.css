@@ -1,0 +1,75 @@
+@import "../../vars.css";
+
+.container {
+    background-image: linear-gradient(
+            0deg,
+            #0B2447 0%,
+            #576CBC 100%
+    );
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 16px 14px 0 #04152d;
+    padding: 16px 24px;
+    max-width: 345px;
+
+}
+
+.image {
+    margin-bottom: 26px;
+    display: flex;
+    margin-top: 18px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.description {
+    margin-top: 6px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.skills {
+    width: 100%;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+
+}
+
+.skill {
+    background: var(--color-dark);
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 2px 22px;
+}
+
+.links {
+    width: 100%;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*flex-wrap: wrap;*/
+    /*gap: 23px;*/
+    /*list-style: none;*/
+}
+
+.link {
+    background: var(--color-primary);
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 1px 22px;
+    text-decoration: none;
+    color: var(--color-text)
+}
