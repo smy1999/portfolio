@@ -52,7 +52,7 @@
     .navbar {
         /*按列展示*/
         flex-direction: column;
-        /*在交叉轴(非主轴)方向顶部对齐*/
+        /*在交叉轴(非主轴)方向顶部对齐,左对齐*/
         align-items: flex-start;
     }
 
