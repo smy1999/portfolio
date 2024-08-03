@@ -1,5 +1,21 @@
 [
   {
+    "title": "Java",
+    "imageSrc": "skills/java.png"
+  },
+  {
+    "title": "Python",
+    "imageSrc": "skills/python.png"
+  },
+  {
+    "title": "JavaScript",
+    "imageSrc": "skills/javascript.png"
+  },
+  {
+    "title": "MySQL",
+    "imageSrc": "skills/mysql.png"
+  },
+  {
     "title": "HTML",
     "imageSrc": "skills/html.png"
   },
@@ -12,19 +28,67 @@
     "imageSrc": "skills/react.png"
   },
   {
-    "title": "Node",
-    "imageSrc": "skills/node.png"
+    "title": "Node.js",
+    "imageSrc": "skills/nodejs.png"
   },
   {
-    "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
+  "title": "Spring",
+  "imageSrc": "skills/spring.png"
   },
   {
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
+    "title": "Redis",
+    "imageSrc": "skills/redis.png"
   },
   {
-    "title": "Figma",
-    "imageSrc": "skills/figma.png"
+    "title": "C++",
+    "imageSrc": "skills/cpp.png"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "skills/git.png"
+  },
+  {
+    "title": "Linux",
+    "imageSrc": "skills/linux.svg"
+  },
+  {
+    "title": "MyBatis",
+    "imageSrc": "skills/mybatis.svg"
+  },
+  {
+    "title": "Go",
+    "imageSrc": "skills/go.svg"
+  },
+  {
+    "title": "Kafka",
+    "imageSrc": "skills/kafka.svg"
+  },
+  {
+    "title": "ES",
+    "imageSrc": "skills/elasticsearch.svg"
+  },
+  {
+    "title": "NGINX",
+    "imageSrc": "skills/nginx.png"
+  },
+  {
+    "title": "Dubbo",
+    "imageSrc": "skills/dubbo.png"
+  },
+  {
+    "title": "OpenCV",
+    "imageSrc": "skills/opencv.png"
+  },
+  {
+    "title": "PyQT",
+    "imageSrc": "skills/pyqt.png"
+  },
+  {
+    "title": "TensorFlow",
+    "imageSrc": "skills/tensorflow.png"
+  },
+  {
+    "title": "PyTorch",
+    "imageSrc": "skills/pytorch.svg"
   }
 ]
