@@ -19,11 +19,11 @@
 .projects {
     padding-top: 37px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 15px;
     flex-wrap: wrap;
     align-items: center;
     /*弹性模型按主轴居中对齐*/
     justify-content: center;
-    width: 100%
+    width: 100%;
 }

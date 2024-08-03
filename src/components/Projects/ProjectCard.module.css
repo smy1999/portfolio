@@ -7,30 +7,29 @@
             #576CBC 100%
     );
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border-radius: 10px;
     box-shadow: 0 16px 14px 0 #04152d;
-    padding: 16px 24px;
-    max-width: 345px;
-
+    padding: 24px 24px;
+    width: 90%;
+    gap: 20px;
+    align-items: center;
 }
 
 .image {
-    margin-bottom: 26px;
     display: flex;
-    margin-top: 18px;
     width: 300px;
     border-radius: 10px;
 }
 
 .title {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
 }
 
 .description {
     margin-top: 6px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -49,8 +48,8 @@
     background: var(--color-dark);
     border-radius: 100px;
     font-weight: 400;
-    font-size: 25px;
-    padding: 2px 22px;
+    font-size: 20px;
+    padding: 3px 12px;
 }
 
 .links {
@@ -58,10 +57,7 @@
     margin-top: 26px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    /*flex-wrap: wrap;*/
-    /*gap: 23px;*/
-    /*list-style: none;*/
+    gap: 10px
 }
 
 .link {
@@ -72,4 +68,31 @@
     padding: 1px 22px;
     text-decoration: none;
     color: var(--color-text)
+}
+
+@media screen and (max-width: 830px) {
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .skill {
+        font-size: 18px;
+    }
+
+    .link {
+        font-size: 18px;
+        padding: 1px 10px;
+    }
+
+
 }
