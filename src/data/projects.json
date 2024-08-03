@@ -1,26 +1,18 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Starry Lottery Platform",
+    "imageSrc": "projects/lottery.png",
+    "description": " A distributed microservices-based online lottery platform based on Spring Boot, implementing user tag filtering, lottery event configuration, and prize distribution.",
+    "skills": ["Java", "Spring Boot", "MySQL", "Dubbo", "Kafka", "Elasticsearch"],
+    "demo": "https://github.com/smy1999/moon-lottery-backend",
+    "source": "https://github.com/smy1999/moon-order-backend"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Moon Ordering",
+    "imageSrc": "projects/moon-order.png",
+    "description": "An online ordering system based on Spring Boot, featuring transactions, order management, shopping cart, employee management, statistics report exports, etc.",
+    "skills": ["Java", "Spring Boot", "MyBatis", "MySQL", "Redis", "NGINX"],
+    "demo": "https://github.com/smy1999/moon-order-backend",
+    "source": "https://github.com/smy1999/moon-order-backend"
   }
 ]

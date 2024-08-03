@@ -16,11 +16,12 @@
 }
 
 .content {
+
     display: flex;
     flex-direction: row;
     /*子元素容器边缘之间平均分配空间*/
     justify-content: space-evenly;
-    margin-top: 14px;
+    padding-top: 37px;
 }
 
 .skills {
@@ -44,17 +45,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 
 }
 
 .skillImageContainer img {
-    width: 75px;
+    width: 60px;
 }
 
 .skill p {
-    font-size: 25px;
+    font-size: 20px;
     font-family: var(--font-roboto);
     font-weight: 500;
 }
@@ -68,7 +69,7 @@
 
 .historyItem {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 17px;
     padding: 24px;
@@ -80,7 +81,24 @@
     border-radius: 10px;
 }
 
-.historyItem img {
+.historyItemTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px
+}
+
+.historyItemTitle h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.historyItemTitle p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.historyItemTitle img {
     width: 50px;
 }
 
@@ -88,27 +106,28 @@
     font-family: var(--font-roboto);
 }
 
-.historyItemDetails h3 {
-    font-size: 30px;
-    font-weight: 500;
-}
 
-.historyItemDetails p {
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.historyItemDetails ul {
+.historyItem ul {
     margin-top: 6px;
     /*点在列表内*/
-    list-style-position: inside;
+    /*list-style-position: inside;*/
     list-style-type: disc;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     margin-left: 17px
 }
 
 @media screen and (max-width: 830px) {
+    .container {
+        padding-top: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .title {
+        margin-left: 5%;
+    }
+
     .content {
         flex-direction: column;
         align-items: center;
@@ -121,9 +140,36 @@
         justify-content: center;
     }
 
+    .skillImageContainer {
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .skillImageContainer img {
+        width: 35px;
+    }
+
+    .skill p {
+        font-size: 15px;
+    }
+
     .history {
-        width: 100%;
+        width: 90%;
         gap: 9px;
     }
+
+    .historyItemTitle h3 {
+        font-size: 20px;
+    }
+
+    .historyItemTitle p {
+        font-size: 15px;
+    }
+
+    .historyItem ul {
+        font-size: 15px;
+    }
+
 
 }

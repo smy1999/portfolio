@@ -1,29 +1,24 @@
 [
   {
-    "role": "Software Engineer",
-    "organisation": "Google",
-    "startDate": "Sept, 2022",
+    "role": "Backend Software Engineer Intern",
+    "organisation": "Meituan",
+    "startDate": "Apr, 2024",
     "endDate": "Present",
-    "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
-    "imageSrc": "history/google.png"
-  },
-  {
-    "role": "UI Designer",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2021",
-    "endDate": "Aug, 2022",
-    "experiences": ["Worked on Windows 11", "Designed the control panel"],
-    "imageSrc": "history/microsoft.png"
-  },
-  {
-    "role": "SWE Intern",
-    "organisation": "Netflix",
-    "startDate": "Apr, 2020",
-    "endDate": "Jun, 2020",
     "experiences": [
-      "Worked on component library",
-      "Helped create UI components"
+      "Spearheaded the development of a customer service portal of Meituan’s overseas food delivery application Keeta in Spring Framework, integrating FAQ, instant messaging, and ticket services.",
+      "Engineered a configuration dashboard for the portal, providing 48 RPC interfaces to facilitate dynamic configuration."
     ],
-    "imageSrc": "history/netflix.png"
+    "imageSrc": "history/meituan.png"
+  },
+  {
+    "role": "Machine Learning Engineer Intern",
+    "organisation": "Tianhong Technology",
+    "startDate": "Nov, 2021",
+    "endDate": "Sep, 2022",
+    "experiences": [
+      "Proposed a semi-supervised segmentation model for seabed mineral image segmentation based on DDPMs using PyTorch.",
+      "Developed a multi-task model for simultaneous road sign detection, lane line semantic segmentation, and street scene instance segmentation"
+      ],
+    "imageSrc": "history/yilian-white.JPG"
   }
 ]
