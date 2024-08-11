@@ -2,19 +2,19 @@
   {
     "role": "Backend Software Engineer Intern",
     "organisation": "Meituan",
-    "startDate": "Apr, 2024",
-    "endDate": "Present",
+    "startDate": "Apr. 2024",
+    "endDate": "Aug. 2024",
     "experiences": [
       "Spearheaded the development of a customer service portal of Meituan’s overseas food delivery application Keeta in Spring Framework, integrating FAQ, instant messaging, and ticket services.",
-      "Engineered a configuration dashboard for the portal, providing 48 RPC interfaces to facilitate dynamic configuration."
+      "Developed a configuration dashboard for the service portal, implementing dynamic configuration capabilities for FAQ and button functionalities, enabling swift adjustment of service strategies."
     ],
     "imageSrc": "history/meituan.png"
   },
   {
     "role": "Machine Learning Engineer Intern",
     "organisation": "Tianhong Technology",
-    "startDate": "Nov, 2021",
-    "endDate": "Sep, 2022",
+    "startDate": "Nov. 2021",
+    "endDate": "Sep. 2022",
     "experiences": [
       "Proposed a semi-supervised segmentation model for seabed mineral image segmentation based on DDPMs using PyTorch.",
       "Developed a multi-task model for simultaneous road sign detection, lane line semantic segmentation, and street scene instance segmentation"
