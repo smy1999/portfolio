@@ -1,7 +1,7 @@
 [
   {
     "title": "Starry Lottery Platform",
-    "imageSrc": "projects/lottery.png",
+    "imageSrc": "projects/starry-lottery-platform.png",
     "description": " A distributed microservices-based online lottery platform based on Spring Boot, implementing user tag filtering, lottery event configuration, and prize distribution.",
     "skills": ["Java", "Spring Boot", "MySQL", "Dubbo", "Kafka", "Elasticsearch"],
     "demo": "https://github.com/smy1999/moon-lottery-backend",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Moon Ordering",
-    "imageSrc": "projects/moon-order.png",
+    "imageSrc": "projects/moon-ordering.png",
     "description": "An online ordering system based on Spring Boot, featuring transactions, order management, shopping cart, employee management, statistics report exports, etc.",
     "skills": ["Java", "Spring Boot", "MyBatis", "MySQL", "Redis", "NGINX"],
     "demo": "https://github.com/smy1999/moon-order-backend",
