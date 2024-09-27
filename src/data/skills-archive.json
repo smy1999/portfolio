@@ -52,11 +52,19 @@
     "imageSrc": "skills/cpp.png"
   },
   {
+    "title": "Git",
+    "imageSrc": "skills/git.png"
+  },
+  {
+    "title": "Linux",
+    "imageSrc": "skills/linux.svg"
+  },
+  {
     "title": "MyBatis",
     "imageSrc": "skills/mybatis.svg"
   },
   {
-    "title": "Tailwind",
+    "title": "Tailwind CSS",
     "imageSrc": "skills/tailwindcss.png"
   },
   {
@@ -74,5 +82,25 @@
   {
     "title": "NGINX",
     "imageSrc": "skills/nginx.png"
+  },
+  {
+    "title": "Dubbo",
+    "imageSrc": "skills/dubbo.png"
+  },
+  {
+    "title": "OpenCV",
+    "imageSrc": "skills/opencv.png"
+  },
+  {
+    "title": "PyQT",
+    "imageSrc": "skills/pyqt.png"
+  },
+  {
+    "title": "TensorFlow",
+    "imageSrc": "skills/tensorflow.png"
+  },
+  {
+    "title": "PyTorch",
+    "imageSrc": "skills/pytorch.svg"
   }
 ]
