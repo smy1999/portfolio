@@ -1,8 +1,16 @@
 [
   {
+    "title": "Moon Car Rental",
+    "imageSrc": "projects/moon-car-rental.jpg",
+    "description": "A full-stack car rental application, implementing car browsing, car booking, and booking management.",
+    "skills": ["TypeScript", "Next.js", "React", "Tailwind CSS", "GraphQL"],
+    "demo": "https://moon-car-rental.mingyueshao.top/",
+    "source": "https://github.com/smy1999/moon-car-rental"
+  },
+  {
     "title": "Starry Lottery Platform",
     "imageSrc": "projects/starry-lottery-platform.png",
-    "description": " A distributed microservices-based online lottery platform based on Spring Boot, implementing user tag filtering, lottery event configuration, and prize distribution.",
+    "description": "A distributed microservices-based online lottery platform based on Spring Boot, implementing user tag filtering, lottery event configuration, and prize distribution.",
     "skills": ["Java", "Spring Boot", "MySQL", "Dubbo", "Kafka", "Elasticsearch"],
     "demo": "https://github.com/smy1999/moon-lottery-backend",
     "source": "https://github.com/smy1999/moon-order-backend"
