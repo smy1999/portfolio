@@ -1,7 +1,8 @@
 import styles from "./Projects.module.css";
-import projects from "../../data/projects.json"
 import {ProjectCard} from "./ProjectCard.jsx";
-export const Projects = () => {
+
+export const Projects = (data) => {
+  const {projects} = data;
   return (
     <section className={styles.container} id={"projects"}>
       <h2 className={styles.title}>Projects</h2>
