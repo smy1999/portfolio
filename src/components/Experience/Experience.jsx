@@ -10,53 +10,54 @@ export const Experience = () => {
   const [skills, setSkills] = useState([])
   const [experiences, setExperiences] = useState()
 
-  const getSkills = async () => {
-    try {
-      const response = await get('/skills');
-      console.log(2)
-      console.log(response);
-
-      if (response.body) {
-        const data = JSON.parse(response.body);
-        const mappedSkills = data.skills.map(skill => ({
-          ...skill,
-          imageSrc: skill.image_src
-        }));
-        console.log(mappedSkills);
-        setSkills(mappedSkills);
-      } else {
-        console.error('Response body is undefined');
-      }
-    } catch (error) {
-      console.error('Error fetching skills:', error);
-    }
-  };
-
-  const getExperiences = async () => {
-    try {
-      const response = await get('/experiences');
-      console.log(2)
-      console.log(response);
-
-      if (response.body) {
-        const data = JSON.parse(response.body);
-        const mappedExperiences = data.experiences.map(experience => ({
-          ...experiences,
-          endDate: experience.end_date,
-          startDate: experience.start_date,
-          imageSrc: experience.image_src
-        }));
-        console.log(mappedExperiences);
-        setExperiences(mappedExperiences);
-      } else {
-        console.error('Response body is undefined');
-      }
-    } catch (error) {
-      console.error('Error fetching skills:', error);
-    }
-  };
-
   useEffect(() => {
+
+    const getSkills = async () => {
+      try {
+        const response = await get('/skills');
+        console.log(2)
+        console.log(response);
+
+        if (response.body) {
+          const data = JSON.parse(response.body);
+          const mappedSkills = data.skills.map(skill => ({
+            ...skill,
+            imageSrc: skill.image_src
+          }));
+          console.log(mappedSkills);
+          setSkills(mappedSkills);
+        } else {
+          console.error('Response body is undefined');
+        }
+      } catch (error) {
+        console.error('Error fetching skills:', error);
+      }
+    };
+
+    const getExperiences = async () => {
+      try {
+        const response = await get('/experiences');
+        console.log(2)
+        console.log(response);
+
+        if (response.body) {
+          const data = JSON.parse(response.body);
+          const mappedExperiences = data.experiences.map(experience => ({
+            ...experiences,
+            endDate: experience.end_date,
+            startDate: experience.start_date,
+            imageSrc: experience.image_src
+          }));
+          console.log(mappedExperiences);
+          setExperiences(mappedExperiences);
+        } else {
+          console.error('Response body is undefined');
+        }
+      } catch (error) {
+        console.error('Error fetching skills:', error);
+      }
+    };
+
     getExperiences();
     getSkills();
   }, []);
