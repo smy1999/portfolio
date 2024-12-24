@@ -2,26 +2,31 @@ import styles from './Experience.module.css';
 import history from '../../data/history.json'
 import {get, getImageUrl} from "../../utils.js";
 import {useEffect, useState} from "react";
+// import skills from '../../data/skills.json'
 
 
-const [skills, setSkills] = useState([])
 
-useEffect(() => {
-  const getSkills = () => {
-    try {
-      const response = get('/skills')
-      console.log(response)
-      setSkills(response)
-    } catch (error) {
-      console.error('Error fetching skills:', error)
-    }
-  }
-  getSkills()
-
-}, []);
 
 
 export const Experience = () => {
+
+
+  const [skills, setSkills] = useState([])
+
+  useEffect(() => {
+    const getSkills = async () => {
+      try {
+        const response = await get('/skills')
+        console.log(2)
+        console.log(response)
+        setSkills(response)
+      } catch (error) {
+        console.error('Error fetching skills:', error)
+      }
+    }
+    getSkills()
+  }, []);
+
   return (
     <section className={styles.container} id={"experience"}>
       <h2 className={styles.title}>Experience</h2>
