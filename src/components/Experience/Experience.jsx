@@ -1,5 +1,4 @@
 import styles from './Experience.module.css';
-import history from '../../data/history.json'
 import {get, getImageUrl} from "../../utils.js";
 import {useEffect, useState} from "react";
 
