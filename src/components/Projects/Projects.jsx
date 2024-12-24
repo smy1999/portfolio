@@ -2,6 +2,7 @@ import styles from "./Projects.module.css";
 import {ProjectCard} from "./ProjectCard.jsx";
 import {useEffect, useState} from "react";
 import {get} from "../../utils.js";
+
 export const Projects = () => {
 
   const [projects, setProjects] = useState([])
@@ -16,6 +17,7 @@ export const Projects = () => {
           ...project,
           imageSrc: project.image_src
         }));
+        mappedProjects.sort((a, b) => a.id - +b.id)
         setProjects(mappedProjects);
       } else {
         console.error('Response body is undefined');
@@ -28,7 +30,6 @@ export const Projects = () => {
   useEffect(() => {
     getProjects();
   }, []);
-
 
   return (
     <section className={styles.container} id={"projects"}>

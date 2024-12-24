@@ -20,7 +20,7 @@ export const Experience = () => {
           ...skill,
           imageSrc: skill.image_src
         }));
-        console.log(mappedSkills);
+        mappedSkills.sort((a, b) => a.id - +b.id)
         setSkills(mappedSkills);
       } else {
         console.error('Response body is undefined');
@@ -42,6 +42,7 @@ export const Experience = () => {
           startDate: experience.start_date,
           imageSrc: experience.image_src
         }));
+        mappedExperiences.sort((a, b) => a.id - +b.id)
         setExperiences(mappedExperiences);
 
       } else {
