@@ -7,7 +7,7 @@ export const Experience = () => {
 
 
   const [skills, setSkills] = useState([])
-  const [experiences, setExperiences] = useState()
+  const [experiences, setExperiences] = useState([])
 
   const getSkills = async () => {
     try {
