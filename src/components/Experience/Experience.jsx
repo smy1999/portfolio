@@ -40,7 +40,7 @@ export const Experience = () => {
       if (response.body) {
         const data = JSON.parse(response.body);
         const mappedExperiences = data.experiences.map(experience => ({
-          ...experiences,
+          ...experience,
           endDate: experience.end_date,
           startDate: experience.start_date,
           imageSrc: experience.image_src

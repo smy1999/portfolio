@@ -16,7 +16,7 @@ export const Projects = () => {
         if (response.body) {
           const data = JSON.parse(response.body);
           const mappedProjects = data.projects.map(project => ({
-            ...projects,
+            ...project,
             imageSrc: project.image_src
           }));
           console.log(mappedProjects);
