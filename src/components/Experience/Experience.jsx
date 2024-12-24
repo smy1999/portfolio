@@ -10,19 +10,25 @@ export const Experience = () => {
   const [skills, setSkills] = useState([])
 
   useEffect(() => {
-    const getSkills = () => {
+    const getSkills = async () => {
       try {
-        const response = get('/skills')
-        const data = JSON.parse(response.body)
+        const response = await get('/skills');
         console.log(2)
-        console.log(response)
-        console.log(data)
-        setSkills(data)
+        console.log(response);
+
+        if (response.body) {
+          const data = JSON.parse(response.body);
+          console.log(data);
+          setSkills(data.skills);
+        } else {
+          console.error('Response body is undefined');
+        }
       } catch (error) {
-        console.error('Error fetching skills:', error)
+        console.error('Error fetching skills:', error);
       }
-    }
-    getSkills()
+    };
+
+    getSkills();
   }, []);
 
   return (
