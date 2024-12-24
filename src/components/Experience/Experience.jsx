@@ -18,8 +18,12 @@ export const Experience = () => {
 
         if (response.body) {
           const data = JSON.parse(response.body);
-          console.log(data);
-          setSkills(data.skills);
+          const mappedSkills = data.skills.map(skill => ({
+            ...skill,
+            imageSrc: skill.image_src
+          }));
+          console.log(mappedSkills);
+          setSkills(mappedSkills);
         } else {
           console.error('Response body is undefined');
         }
