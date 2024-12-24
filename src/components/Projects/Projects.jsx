@@ -6,28 +6,26 @@ export const Projects = () => {
 
   const [projects, setProjects] = useState([])
 
-  useEffect(() => {
-    const getProjects = async () => {
-      try {
-        const response = await get('/projects');
-        console.log(2)
-        console.log(response);
+  const getProjects = async () => {
+    try {
+      const response = await get('/projects');
 
-        if (response.body) {
-          const data = JSON.parse(response.body);
-          const mappedProjects = data.projects.map(project => ({
-            ...project,
-            imageSrc: project.image_src
-          }));
-          console.log(mappedProjects);
-          setProjects(mappedProjects);
-        } else {
-          console.error('Response body is undefined');
-        }
-      } catch (error) {
-        console.error('Error fetching skills:', error);
+      if (response.body) {
+        const data = JSON.parse(response.body);
+        const mappedProjects = data.projects.map(project => ({
+          ...project,
+          imageSrc: project.image_src
+        }));
+        setProjects(mappedProjects);
+      } else {
+        console.error('Response body is undefined');
       }
-    };
+    } catch (error) {
+      console.error('Error fetching skills:', error);
+    }
+  };
+
+  useEffect(() => {
     getProjects();
   }, []);
 

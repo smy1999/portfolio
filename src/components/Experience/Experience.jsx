@@ -5,7 +5,6 @@ import {useEffect, useState} from "react";
 
 export const Experience = () => {
 
-
   const [skills, setSkills] = useState([])
   const [experiences, setExperiences] = useState([])
 
@@ -34,8 +33,6 @@ export const Experience = () => {
   const getExperiences = async () => {
     try {
       const response = await get('/experiences');
-      console.log(2)
-      console.log(response);
 
       if (response.body) {
         const data = JSON.parse(response.body);
@@ -45,8 +42,8 @@ export const Experience = () => {
           startDate: experience.start_date,
           imageSrc: experience.image_src
         }));
-        console.log(mappedExperiences);
         setExperiences(mappedExperiences);
+
       } else {
         console.error('Response body is undefined');
       }

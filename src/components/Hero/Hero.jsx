@@ -12,7 +12,7 @@ export const Hero = () => {
           I am pursuing a master's degree in Electrical and Computer Engineering at University of Washington.
           Previously, I received my bachelor's and master's degree in Computer Science at Minzu University of China. I was a software development intern at Meituan.
           <br/>
-          I am seeking summer internships and full-time opportunities for 2025.
+          I am seeking full-time opportunities for 2026.
           Reach out if you'd like to learn more.
         </p>
         <a className={styles.contactBtn} href={"mailto:smy1999@uw.edu"}>Contact Me</a>

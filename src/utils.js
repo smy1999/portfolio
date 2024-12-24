@@ -9,10 +9,7 @@ const origin = 'https://zelj5guseh.execute-api.us-east-2.amazonaws.com/dev'
 
 export const get = async (path) => {
   try {
-    console.log(0);
     const response = await axios.get(origin + '/api' + path);
-    console.log(1);
-    console.log(response.data);
     return response.data;
   } catch (error) {
     console.error('Error fetching data:', error);
