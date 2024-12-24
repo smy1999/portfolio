@@ -80,7 +80,7 @@ export const Experience = () => {
         }
         </div>
         <ul className={styles.history}>{
-          history.map((historyItem, id) => {
+          experiences.map((historyItem, id) => {
             return (
               <li key={id} className={styles.historyItem}>
                 <div className={styles.historyItemTitle}>
