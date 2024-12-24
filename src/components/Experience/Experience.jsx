@@ -2,10 +2,6 @@ import styles from './Experience.module.css';
 import history from '../../data/history.json'
 import {get, getImageUrl} from "../../utils.js";
 import {useEffect, useState} from "react";
-// import skills from '../../data/skills.json'
-
-
-
 
 
 export const Experience = () => {
@@ -14,12 +10,14 @@ export const Experience = () => {
   const [skills, setSkills] = useState([])
 
   useEffect(() => {
-    const getSkills = async () => {
+    const getSkills = () => {
       try {
-        const response = await get('/skills')
+        const response = get('/skills')
+        const data = JSON.parse(response.body)
         console.log(2)
         console.log(response)
-        setSkills(response)
+        console.log(data)
+        setSkills(data)
       } catch (error) {
         console.error('Error fetching skills:', error)
       }
