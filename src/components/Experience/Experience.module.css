@@ -93,6 +93,11 @@
     font-weight: 500;
 }
 
+.historyItemTitle h4 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
 .historyItemTitle p {
     font-size: 20px;
     font-weight: 300;
