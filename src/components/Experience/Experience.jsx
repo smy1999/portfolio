@@ -11,8 +11,6 @@ export const Experience = () => {
   const getSkills = async () => {
     try {
       const response = await get('/skills');
-      console.log(2)
-      console.log(response);
 
       if (response.body) {
         const data = JSON.parse(response.body);
