@@ -82,7 +82,8 @@ export const Experience = () => {
                   <img src={getImageUrl(historyItem.imageSrc)}
                        alt={`${historyItem.organisation} Logo`}/>
                   <div className={styles.historyItemTitleContent}>
-                    <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
+                    <h3>{`${historyItem.organisation}`}</h3>
+                    <h4>{`${historyItem.role}`}</h4>
                     <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
                   </div>
                 </div>
