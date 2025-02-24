@@ -9,11 +9,16 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Mingyue Shao</h1>
         <p className={styles.description}>
-          I am pursuing a master's degree in Electrical and Computer Engineering at University of Washington.
-          Previously, I received my bachelor's and master's degree in Computer Science at Minzu University of China. I was a software development intern at Meituan.
+          I am currently pursuing a master's degree in Electrical and Computer Engineering at the University of
+          Washington.
+          Previously, I earned both my bachelor's and master's degrees in Computer Science from Minzu University of
+          China.
+          I was also a software development intern at Meituan.
           <br/>
-          I am seeking full-time opportunities for 2026.
-          Reach out if you'd like to learn more.
+          This coming summer and fall, I will be joining Meta and Amazon.
+          <br/>
+          I am actively seeking full-time opportunities for 2026.
+          Feel free to reach out if you'd like to connect!
         </p>
         <a className={styles.contactBtn} href={"mailto:smy1999@uw.edu"}>Contact Me</a>
       </div>
